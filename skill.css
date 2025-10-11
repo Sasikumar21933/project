@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    font-family: sans-serif;
+    position: fixed;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 20px 30px;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(74, 200, 223, 0.23) 0px 6px 6px;
+} 
+nav h1 {
+    font-size: 45px;
+     color: #00FFFF;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+      color: transparent;
+    background-clip:text;
+    background-image: linear-gradient(to right,aqua,white,white,aqua);
+}
+.h1p{
+    font-size: 55px;
+}
+nav i
+{
+    font-size: 25px;
+     color: #00FFFF;
+}
+nav .subNav {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    transition: all 1s;
+}
+nav .subNav a {
+    text-decoration: none;
+    color: #00FFFF;
+    font-size: 23px;
+    /* background-color: wheat; */
+    padding: 5px;
+    font-family: sans-serif;
+    position: relative;
+}
+nav .subNav a::before {
+    z-index: -1;
+    content: "";
+    height: 0px;
+    /* width: 100%; */
+    position: absolute;
+    background-image: linear-gradient(to right,white,aqua);
+    left: 0px;
+    bottom: 0px;
+    transition: all 1s;
+}
+nav .subNav a::after {
+    z-index: -1;
+    content: "";
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(to right,white,aqua);
+    right: 0px;
+    top: 0px;
+    transition: all 1s;
+}
+nav .subNav a:hover::before, nav .subNav a:hover::after {
+    height: 100%;
+    border-radius: 10px;
+    color: black;
+}
+.subNav a:hover{
+    color: black;
+}
+input:checked~.subNav
+{
+    left: 60%;
+}
+nav label
+{
+    display: none;
+}
+input
+{
+    display: none;
+}
+.my-carrier
+{
+    margin-top: 100px;
+    padding: 100px;
+}
+.my-carrier h1
+{
+    font-size: 50px;
+}
+.my-carrier h1:last-child
+{
+    color: #00FFFF;
+   
+}
+.overall{
+    height: 100vh;
+    padding-top: 100px;
+}
+.yline-1
+{
+    height: 100px;
+    width: 400px;
+    position: relative;
+    padding-top: 50px;
+    transform: rotate(350deg);
+    top: -63px;
+    left: 220px;
+}
+.yline-2
+{
+   height: 100px;
+    width: 400px;
+    position: relative;
+    padding-top: 50px;
+    transform: rotate(10deg) rotateY(200deg);
+    top: -160px;
+    left: -220px;
+}
+.yline-3
+{
+     height: 100px;
+    width: 400px;
+    position: relative;
+    padding-top: 50px;
+    transform: rotate(0deg) rotateY(180deg) rotateZ(180deg);
+    top: -70px;
+    left: 240px;
+}
+.yline-4
+{
+     height: 100px;
+    width: 400px;
+    position: relative;
+    padding-top: 50px;
+    transform: rotate(0deg) rotateY(0deg) rotateZ(180deg);
+    top: -170px;
+    left: -250px;
+}
+.yline-5
+{
+     height: 100px;
+    width: 400px;
+    position: relative;
+    padding-top: 50px;
+    transform: rotate(350deg) rotateY(0deg) rotateZ(160deg);
+    top: -80px;
+    left: -200px;
+}
+.yline-6
+{
+      height: 100px;
+    width: 400px;
+    position: relative;
+    padding-top: 50px;
+    transform: rotate(10deg) rotateY(180deg) rotateZ(160deg);
+    top: -180px;
+    left: 200px;
+}
+.codey-1
+{
+    position: absolute;
+    width: 50px;
+    top: 72px;
+    height: 2px;
+    background-color: goldenrod;
+    transform: rotate(120deg);
+}
+.codey-2
+{
+    position: absolute;
+    width: 280px;
+    left: 37px;
+    height: 2px;
+    background-color: goldenrod;
+    transform: rotate(0deg);
+}
+.codey-3
+{
+     position: absolute;
+    width: 80px;
+    left: 37px;
+    height: 2px;
+    background-color: goldenrod;
+    transform: rotate(0deg);
+}
+.cody-4
+{
+    position: absolute;
+    width: 50px;
+    top: 72px;
+    height: 2px;
+    background-color: goldenrod;
+    transform: rotate(120deg);
+}
+.numy-4
+{
+      height: 60px;
+    width: 60px;
+    display: flex;
+    position: absolute;
+    left: 315px;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+}
+.numy-2
+{
+     height: 60px;
+    width: 60px;
+    display: flex;
+    position: absolute;
+    left: 315px;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+}
+.numy-4 h3
+{
+  transform: rotateX(0deg) rotateZ(180deg);   
+}
+.numy-2 h3
+{
+    transform: rotateX(200deg) rotateZ(170deg);
+}
+.numy-3 h3
+{
+    transform: rotateX(200deg) rotateZ(0deg);
+}
+.numy-3
+{
+      height: 60px;
+    width: 60px;
+    display: flex;
+    position: absolute;
+    left: 315px;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+}
+.numy-6
+{
+      height: 60px;
+    width: 60px;
+    display: flex;
+    position: absolute;
+    left: 315px;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+}
+.numy-5 h3
+{
+     transform: rotateX(200deg) rotateZ(350deg);
+}
+.numy-1 h3
+{
+    transform: rotateX(0deg) rotateZ(10deg);
+}
+.numy-6 h3
+{
+     transform: rotateX(0deg) rotateZ(190deg);
+}
+.numy-5
+{
+       height: 60px;
+    width: 60px;
+    display: flex;
+    position: absolute;
+    left: 315px;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+}
+.numy-4
+{
+      height: 60px;
+    width: 60px;
+    display: flex;
+    position: absolute;
+    left: 315px;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+}
+.numy-1
+{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    position: absolute;
+    left: 315px;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+}
+.my-skill{
+    position: relative;
+    /* margin-left: 28%; */
+    /* margin: auto; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    padding-top: 200px;
+    padding-bottom: 0px;
+}
+.stit{
+    position: absolute;
+    color: aqua;
+    top: 280px;
+    left: 46%;
+}
+.skill{
+    position: absolute;
+    height: 70px;
+    width: 270px;
+}
+.skill-1{
+    top: 30px;
+    left: 10%;
+    animation-name: sk1;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transition: all 1s;
+}
+@keyframes sk1{
+    0%{
+        left: -350px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-2{
+    top: 30px;
+    right: 10%;
+    animation-name: sk2;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transition: all 1s;
+}
+@keyframes sk2{
+    0%{
+        right: -150px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-3{
+    top: 260px;
+    left: 10%;
+    animation-name: sk3;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transition: all 1s;
+}
+@keyframes sk3{
+    0%{
+        left: -350px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-4{
+    top: 240px;
+    right: 10%;
+    animation-name: sk4;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transition: all 1s;
+}
+@keyframes sk4{
+    0%{
+        right: -150px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-5{
+    top: 430px;
+    left: 10%;
+    animation-name: sk5;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transition: all 1s;
+}
+@keyframes sk5{
+    0%{
+        left: -350px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-6{
+    top: 430px;
+    right: 10%;
+    animation-name: sk6;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transition: all 1s;
+}
+@keyframes sk6{
+    0%{
+        right: -150px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.heading
+{
+    position: relative;
+    width: 200px;
+    height: 80px;
+    left: -60px;
+}
+.cont-skill
+{
+    padding-left: 60px;
+    padding-bottom: 10px;
+    margin: 0px 30px 20px 30px;
+    padding-right: 10px;
+    display: none;
+     animation-name: pro;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry;
+}
+.sti{
+    padding: 20px;
+    color: aqua;
+    text-align: center;
+}
+.num{
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+}
+.cont-skill p
+{
+    color: white;
+    margin-top: -40px;
+     line-height: 25px;
+    font-size: 20px;
+}
+.hed
+{
+    border-bottom: 2px solid goldenrod;
+    width: 90px;
+    color: white;
+    padding: 5px 10px 2px 10px;
+    position: absolute;
+    left: 48px;
+    top: -5px;
+}
+.hed-line-2
+{
+    width: 60px;
+}
+.hed-line-3
+{
+    width: 160px;
+}
+.hed-line-4
+{
+    width: 115px;
+}
+.hed-line-5
+{
+    width: 157px;
+}
+@media screen and (max-width:900px) {
+    nav .subNav{
+        position: fixed;
+        background-color: black;
+        left: 110%;
+        top: 67px;
+        width: 40%;
+        /* height: 50vh; */
+        border-radius: 5px;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 40px;
+        
+    }
+    .subNav a 
+    {
+        color: white;
+    }
+    nav label
+    {
+        display: block;
+        color: white;
+    }
+    .my-skill{
+        display: none;
+    }
+    .cont-skill{
+        display: block;
+    }
+}
+@media only screen and (max-width:500px){
+    nav h1{
+        font-size: 30px;
+    }
+    .h1p{
+        font-size: 40px;
+    }
+}
